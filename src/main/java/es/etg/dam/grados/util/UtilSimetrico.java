@@ -25,7 +25,7 @@ public class UtilSimetrico {
     public static String descifrar(String mensajeCifrado) throws Exception {
         Key key = new SecretKeySpec(PASS.getBytes(UTF), 0, 16, ALOGRITMO);
         Cipher aes = Cipher.getInstance(AES);
-        aes.init(Cipher.ENCRYPT_MODE, key);
+        aes.init(Cipher.DECRYPT_MODE, key);
         byte[] cifrado = Base64.getDecoder().decode(mensajeCifrado);
         byte[] descifrado = aes.doFinal(cifrado);
         return new String(descifrado, UTF);

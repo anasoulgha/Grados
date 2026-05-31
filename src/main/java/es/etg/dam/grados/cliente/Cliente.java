@@ -18,8 +18,7 @@ public class Cliente {
     private static final int NUM_ARG =2;
     private static final int INDEX_GRADOS= 0;
     private static final int INDEX_CONVERSOR=1;
-    private static final String MSG_RESPUESTA ="Respuesta del server: %s %f";
-
+    private static final String MSG_RESPUESTA = "Respuesta del server: %s mensaje: %s";
 
     public static void main(String[] args) throws ClienteException{
 

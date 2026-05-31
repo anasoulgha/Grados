@@ -46,7 +46,7 @@ public class GestionarCliente implements Runnable {
         }
         LogUtil.escribirLog(logger, Level.INFO, "Resultado: " + resultado);
         conn.escribir(resultado, socket);
-        //socket.close();
+        
 
         } catch (Exception e) {
             throw new GestionClienteException(e.getMessage(),e);
